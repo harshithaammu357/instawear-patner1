@@ -1,0 +1,121 @@
+{
+  "theme": "light",
+  "archetype": "Swiss & High-Contrast",
+  "domain": "Apparel B2B SaaS Dashboard",
+  "mood": "Editorial, Confident, Sharp, Ultra-clean",
+  "typography": {
+    "font_families": {
+      "heading": "Cabinet Grotesk, sans-serif",
+      "body": "Satoshi, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tighter leading-tight",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight leading-snug",
+      "h3": "text-xl sm:text-2xl font-semibold tracking-tight",
+      "h4": "text-lg sm:text-xl font-medium tracking-tight",
+      "body": "text-sm md:text-base leading-relaxed",
+      "small_label": "text-xs font-semibold uppercase tracking-[0.2em] text-neutral-500"
+    },
+    "instructions_to_main_agent": "Import Cabinet Grotesk and Satoshi via Fontshare CDN or standard @font-face in index.css. Do not use Inter, Roboto, or standard sans."
+  },
+  "colors": {
+    "background": {
+      "default": "#FFFFFF",
+      "surface": "#F8F8F8",
+      "surface_alt": "#F1F1F1"
+    },
+    "text": {
+      "primary": "#0A0A0A",
+      "secondary": "#525252",
+      "tertiary": "#A3A3A3"
+    },
+    "brand": {
+      "primary": "#000000",
+      "primary_foreground": "#FFFFFF",
+      "accent": "#E63946",
+      "accent_foreground": "#FFFFFF"
+    },
+    "state": {
+      "success": "#2A9D8F",
+      "warning": "#E9C46A",
+      "danger": "#E63946",
+      "info": "#264653"
+    },
+    "border": {
+      "default": "#E5E5E5",
+      "focus": "#000000"
+    }
+  },
+  "surfaces_and_micro_themes": {
+    "dashboard_cards": {
+      "background": "bg-white",
+      "border": "border border-neutral-200",
+      "shadow": "shadow-none hover:shadow-sm transition-shadow duration-200",
+      "radius": "rounded-none"
+    },
+    "buttons": {
+      "primary": "bg-black text-white hover:bg-neutral-800 rounded-none border border-black",
+      "secondary": "bg-white text-black hover:bg-neutral-100 rounded-none border border-neutral-200",
+      "destructive": "bg-[#E63946] text-white hover:bg-[#D62828] rounded-none border border-[#E63946]"
+    },
+    "status_pills": {
+      "pending": "bg-neutral-100 text-neutral-800 border border-neutral-200 rounded-full px-2.5 py-0.5 text-xs font-medium uppercase tracking-wider",
+      "packed": "bg-blue-50 text-blue-800 border border-blue-200 rounded-full px-2.5 py-0.5 text-xs font-medium uppercase tracking-wider",
+      "shipped": "bg-amber-50 text-amber-800 border border-amber-200 rounded-full px-2.5 py-0.5 text-xs font-medium uppercase tracking-wider",
+      "delivered": "bg-green-50 text-green-800 border border-green-200 rounded-full px-2.5 py-0.5 text-xs font-medium uppercase tracking-wider",
+      "cancelled": "bg-red-50 text-red-800 border border-red-200 rounded-full px-2.5 py-0.5 text-xs font-medium uppercase tracking-wider"
+    },
+    "inputs": {
+      "style": "bg-transparent border-b border-neutral-300 rounded-none px-0 py-2 focus:ring-0 focus:border-black transition-colors"
+    }
+  },
+  "layout_and_spacing": {
+    "grid_system": {
+      "dashboard_control_room": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+      "variants_grid": "grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-4"
+    },
+    "spacing_scale": {
+      "container_padding": "px-6 py-8 md:px-12 md:py-16",
+      "section_gap": "gap-12 md:gap-24"
+    },
+    "navigation": {
+      "header": "sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-neutral-200 h-16 flex items-center",
+      "sidebar": "w-64 border-r border-neutral-200 bg-[#F8F8F8] h-screen sticky top-0 hidden lg:block"
+    }
+  },
+  "motion_and_interactions": {
+    "hover_states": "translate-y-[-2px] transition-all duration-200 ease-out",
+    "page_transitions": "opacity-0 animate-in fade-in duration-500",
+    "list_stagger": "animate-in slide-in-from-bottom-4 fade-in duration-300"
+  },
+  "component_instructions": {
+    "tables": "Use Shadcn Table. Make it dense. Add 'border-b border-neutral-200' to rows. Sticky header with 'bg-[#F8F8F8] text-xs uppercase tracking-widest text-neutral-500'. Align numeric columns right.",
+    "charts": "Use Recharts or Shadcn Charts. Use monochromatic palettes (blacks, grays) with one accent color (e.g., #000000 for primary bar, #E5E5E5 for secondary). Hide grid lines or make them very faint dashed lines.",
+    "icons": "Use @phosphor-icons/react (Duotone or Regular weight). They look more premium and editorial than default Lucide icons.",
+    "modals_dialogs": "Use Shadcn Dialog. Remove rounded corners. Backdrop should be 'bg-white/70 backdrop-blur-md'.",
+    "variants_matrix": "For apparel products, build a dense grid showing Size (S, M, L) vs Color. Use small input fields inside the grid cells for quick stock entry."
+  },
+  "testing": {
+    "attributes": "All interactive elements (buttons, inputs, selects, tabs, specific table rows) MUST have 'data-testid' attributes (e.g., data-testid='vendor-login-button', data-testid='product-row-123')."
+  },
+  "media": {
+    "image_urls": [
+      {
+        "url": "https://images.unsplash.com/photo-1765009433753-c7462637d21f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzB8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBjbG90aGluZyUyMHN0b3JlJTIwcmFja3xlbnwwfHx8fDE3Nzc5NTQwMjZ8MA&ixlib=rb-4.1.0&q=85",
+        "category": "hero",
+        "description": "Modern minimalist clothing store rack for the landing/login page hero or side panel"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1759572095317-3a96f9a98e2b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwyfHxtaW5pbWFsaXN0JTIwYXBwYXJlbCUyMGZsYXRsYXl8ZW58MHx8fHwxNzc3OTU0MDA4fDA&ixlib=rb-4.1.0&q=85",
+        "category": "product_placeholder",
+        "description": "Minimalist apparel flatlay for product list placeholders or dashboard widgets"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1516762689617-e1cffcef479d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwzfHxtaW5pbWFsaXN0JTIwYXBwYXJlbCUyMGZsYXRsYXl8ZW58MHx8fHwxNzc3OTU0MDA4fDA&ixlib=rb-4.1.0&q=85",
+        "category": "product_placeholder_alt",
+        "description": "Alternative apparel flatlay for variant examples"
+      }
+    ]
+  }
+}

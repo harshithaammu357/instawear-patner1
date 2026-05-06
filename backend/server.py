@@ -508,7 +508,7 @@ app.include_router(api)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://your-vercel-url.vercel.app", "http://localhost:3000"],
+    allow_origins=["*", "http://localhost:3000"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

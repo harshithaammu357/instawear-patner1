@@ -297,7 +297,7 @@ function ProductModal({ product, onClose, onSaved }) {
   }
 
   return (
-    <div className="fixed inset-0 z-50 bg-white/70 backdrop-blur-md flex items-start md:items-center justify-center p-4 overflow-y-auto" data-testid="product-modal">
+    <div className="fixed inset-0 z-50 bg-white/70 backdrop-blur-md flex items-start justify-center p-4 py-12 overflow-y-auto" data-testid="product-modal">
       <div className="bg-white border hairline w-full max-w-4xl my-8 shadow-xl">
         <div className="flex items-center justify-between px-6 py-4 border-b hairline">
           <div>
